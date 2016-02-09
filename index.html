@@ -1,350 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Carla Prieto | Developer</title>
-     <!---css---->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel= "stylesheet" href = "css/skeleton.css">
-    <link rel="stylesheet" href="css/main.css">
-     <!---fonts---->
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans|Rokkitt:400,700' rel='stylesheet' type='text/css'>
-     <!--chart.js-->
-     <script src="js/Chart.js-master/Chart.js"></script>
-     <!---initial scale--->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-   <body>  
-      <!--SUPER COOL & INNOVATIVE NAV MENU-->
-      <div class= "nav_top twelve columns">
-            <div class= "six columns items hov">
-                  <div class= "icon hov">&nbsp;</div>
-               <a href="#skills">
-                  <p>Skills</p>
-               </a>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PageSpeed Practice</title>
+</head>
+<body>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure.css?v=2134">
+<link rel="stylesheet" href="side-menu.css">
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu pure-menu-open">
+            <a class="pure-menu-heading" href="#" style="font-family:sans-serif">Excercise</a>
+
+            <ul>
+                <li><a href="#main" style="font-family:sans-serif">PageSpeed</a></li>
+                <li class="menu-item-divided"><a href="#howto" style="font-family:sans-serif">Why</a></li>
+
+                <li class="menu-item-divided">
+                    <a href="#resizing" style="font-family:sans-serif">Another link</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="ui.js"></script>
+    <script src="moment.js"></script>    
+
+    <div id="main">
+        <div class="header">
+            <h1>PageSpeed Excercise</h1>
+            <h2>Implement the web performance best practices</h2>
+            <h2>
+            <script>document.write(moment().format('MMMM Do YYYY'))</script>            
+            </h2>
+        </div>
+
+        <div id="howto" class="content">
+            <h2 class="content-subhead">Why use the PageSpeed tools</h2>
+            <p>
+            Fast and optimized pages lead to higher visitor engagement, retention, and conversions. The PageSpeed family of tools is designed to help you optimize the performance of your website. PageSpeed Insights products will help you identify performance best practices that can be applied to your site, and PageSpeed optimization tools can help you automate the process. For more visit <a href="https://developers.google.com/speed/pagespeed/">https://developers.google.com/speed/pagespeed/</a>
+            </p>
+
+            <h2 id="latin" class="content-subhead">Now Let's Speak Some Latin</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <div class="pure-g">
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e15/10948794_523766494432191_181942170_n.jpg">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e15/11296875_1576154892651065_104049781_n.jpg">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e15/11373836_977992532219941_1246945570_n.jpg">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://scontent-b-lax.cdninstagram.com/hphotos-xap1/t51.2885-15/10249317_657733337629239_1612782864_n.jpg">
+                </div>               
             </div>
-            <div class= "six columns items">
-               <div class= "icon hov item_right">&nbsp;</div><br>
-               <a href= "#projects">
-                  <p class= "item_right">Projects</p>
-               </a>
-            </div>
-         </div>
-       <div class= "nav_bottom twelve columns">
-            <div class= "six columns items">
-               <div class= "icon hov">&nbsp;</div>
-               <a href = "#about">
-                  <p>About Me</p>
-               </a>
-            </div>
-            <div class= "six columns items">
-               <div class= "icon hov item_right">&nbsp;</div><br>
-               <a href= "#contact">
-                  <p class= "item_right">Contact</p>
-               </a>
-               
-            </div>
-         </div>
-      <!---HOME---->
-      <div class= "home container">
-         
-         <div class= "title">
-            <h1>Hi I'm <strong>Carla Prieto</strong></h1>
-            <p>I'm a <strong>tech</strong> student</p>
-            <p>Front-end <strong>develop</strong>er</p>
-            <p>from <strong>Chihuahua</strong>, Mexico</p>
-         </div>
-        
-      </div>
-      <!-----SKILLS----->
-      <div class= "skills container">
-         <h1 id= "skills">My Skills</h1>
-          <h2 class= "web" >Web Development</h2>
-         <div class= "twelve columns">
-            <div class= "six columns">
-               <div class= "four columns">
-                   <canvas id="css" width="70" height="70"></canvas>
-                   <p>CSS</p>
-               </div>
-               <div class= "four columns">
-                  <canvas id="html" width="70" height="70"></canvas>
-                   <p>HTML</p>
-               </div>
-               <div class= "four columns">
-                  <canvas id="js" width="70" height="70"></canvas>
-                   <p>Javascript</p>
-               </div>
-            </div>
-            <div class= "six columns">
-               <p>Also: JQuery, Ajax, Node.js, Express.js, Sass, responsive design, love for typography and design and UX basics</p>
-            </div>
-         </div>
-         <h2 class= "mobile">Mobile</h2>
-         <div class= "twelve columns">
-            <div class= "six columns">
-               <div class= "six columns">
-                   <canvas id="objc" width="100" height="100"></canvas>
-                   <p>Objective-C</p>
-               </div>
-               <div class= "six columns">
-                  <canvas id="swift" width="100" height="100"></canvas>
-                   <p>Swift</p>
-               </div>
-            </div>
-            <div class= "six columns">
-               <p>Still learning Swift, but I feel confident in Objective-C</p>
-            </div>
-         </div>
-         <h2 class ="code">Code and other hard skills</h2>
-          <div class= "twelve columns">
-            <div class= "six columns">
-               <div class= "six columns">
-                  <canvas id="unity" width="100" height="100"></canvas>
-                   <p>Unity</p>
-               </div>
-               <div class= "six columns">
-                  <canvas id="java" width="100" height="100"></canvas>
-                   <p>Java</p>
-               </div>
-             </div>
-            <div class = "six columns">
-               <p>Java, C, Unity, Wordpress, a little bit of design tools such as photoshop and illustrator</p>   
-            </div> 
-         </div>
-      <h2 class= "soft">Soft skills</h2>     
-         <p class= "soft_skills">I consider I can learn almost any new tech which knowledge is available on the internet. 
-         I follow a methodology for problem solving and software development: Analize, Design, Perform and Maitaince. I like to analize the prblems and set the goals, design with this in mind and plan a strategy for development, perform/code and finally getting feedback for maintance and improvement.
-         I prefer teamwork and colaboration rather than working alone. I believe everyone knows something I don't and I love to learn from people
-         Finally I consider myself a pretty creative and innovative person which thinks all the time about new solutions.</p>
-      </div>
-      <!-----PROJECTS----->
-      <div class = "projects container">
-         <span></span>
-         <h1 id= "projects">Projects </h1>
-         <div class = "twelve columns">
-            <div class= "four columns">
-               <a href= "tedxavdivdelnorte.com">
-                  <div class ="big tedx">&nbsp;</div>
-               </a>
-               <p>TEDxAvDivDelNorte</p>
-            </div>
-            <div class= "four columns">
-               <a href= "riego.chi.itesm.mx/about.html">
-                  <div class ="big riego">&nbsp;</div>
-               </a>
-               <p>Water Automation</p>
-            </div>
-            <div class= "four columns">
-                <a href= "https://docs.google.com/presentation/d/1uZuoSlA8u19ZLz7qDgVZaFldmf1ZUoYC5r9_g3nex6E/edit?usp=sharing">
-                  <div class ="big al">&nbsp;</div>
-               </a>
-               <p>Augmented Learning</p>
-            </div>
-         </div>
-         <div class= "twelve columns">
-            <div class= "four columns">
-               <a href= "bowerasa.org">
-                  <div class ="big bowerasa">&nbsp;</div>
-               </a>
-               <p>Bowerasa</p>
-            </div>
-            <div class= "eight columns">
-               <div class = "four columns">
-                  <a href= "afpchih.org">
-                     <div class ="small afp">&nbsp;</div>
-                  </a>
-                  <p>AFP Chihuahua</p>
-               </div>
-               <div class = "four columns">
-                  <a href= "congressa.mx">
-                     <div class ="small congressa">&nbsp;</div>
-                  </a>
-                  <p>CONGRESSA</p>
-               </div>
-               <div class = "four columns">
-                  <a href= "reddecohesionsocial.org">
-                     <div class ="small red">&nbsp;</div>
-                  </a>
-                  <p>Red de Cohesion Social</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-----ABOUT ME----->
-      <div class = "about container">
-         <h1 id= "about">About me</h1>
-         <div class= "profpic" >&nbsp;</div>
-         <p>Hi! I'm Carla Prieto a tech student from Chihuahua, Mexico. I love consider myself a young front-end developer, although my projects differ from mobile, web and augmented reality using Unity.</p>
-         <h2>Education:</h2>
-         <p>2012-Now: Undergraduate student of Information Technologies and Communications at Tecnologico de Monterrey campus Chihuahua
-         </p>
-         <p>2014-Now: Software Developer in CITA (Research of Applied Technologies Center)</p>
-         <p>2009-2012: High School in Tecnologico de Monterrey campus Chihuahua</p>
-         <h2>Interests:</h2>
-         <p>Web Development &amp; design: Front-end</p>
-         <p>iOS and OSX development</p>
-         <p>Augmented and Virtual Reality and its usage in education</p>
-         <p>Computer Science and Algoritmia</p>
-         <p>Running with upbeat music</p>
-         <h2>What I do...</h2>
-         <p>I'm a student intern at CITA, a research center at my facility. Nowadays I'm developing a project in hand with a fellow partner, CITA and the middle school next to my facility to incorporate augmented reality to education to help students understand hard-to-imagine concepts. Besides this I work at other projects that come in the way for the research center, and, of course, I make web pages.</p>
-         <h2>What I'm up to...</h2>
-         <p>I look foward learning more front-end for the next years. I'm in love with Javascript, so I also look foward becoming a full-stack Javascript developer. I'd love to have the opportunity to do some international intership or research.</p>
-         <p>After I get my college degree I'm looking foward persuing a master's and even a Ph degree in Information Technology or Computer Science related.</p>
-         <a href = "https://drive.google.com/folderview?id=0Byk-RwnZW45qR2hGZjYxQUZmTTg&usp=sharing" class = "cv twelve columns" >Download my CV in spanish or english here</a>
-         <p class = "center" id= "contact">Or get in contact with me</p>
-         <div class= "twelve columns">
-            <div class = "six columns"><p class = "contact">Mail:</p></div>
-            <div class = "six columns">
-               <a href = "mailto:carlapchavez@gmail.com" class= "link">carlapchavez@gmail.com</a>
-            </div>
-         </div>
-         <div class = "twelve columns">
-            <div class= "six columns"><p class= "contact">Linked In:</p></div>
-            <div class= "six columns">
-            <a href= "https://www.linkedin.com/in/carlaprieto" class = "link">/in/carlaprieto</a></div>
-         </div>
-         
-      </div>
-      
-      <!---Skills chart js script---->
-      <script>
-         /*CSS skills*/
-      var ctx = document.getElementById("css").getContext("2d");
-      var myDoughnutChart = new Chart(ctx).Doughnut(data);
-      var data = [
-    {
-        value: 8,
-        color:"#F7464A",
-        highlight: "#F7464A",
-        label: "CSS"
-    },
-    {
-        value: 2,
-        color: "transparent",
-        highlight: "transparent",
-        label: ""
-    }
-]
-         new Chart(ctx).Doughnut(data);
-         
-         
-      /*HTML*/
-         var ctx = document.getElementById("html").getContext("2d");
-      var myDoughnutChart = new Chart(ctx).Doughnut(data);
-      var data = [
-    {
-        value: 7,
-        color:"#F7464A",
-        highlight: "#F7464A",
-        label: "HTML"
-    },
-    {
-        value: 3,
-        color: "transparent",
-        highlight: "transparent",
-        label: ""
-    }
-]
-         new Chart(ctx).Doughnut(data);
-         
-         
-          /*Javascript*/
-         var ctx = document.getElementById("js").getContext("2d");
-      var myDoughnutChart = new Chart(ctx).Doughnut(data);
-      var data = [
-    {
-        value: 6,
-        color:"#F7464A",
-        highlight: "#F7464A",
-        label: "JS"
-    },
-    {
-        value: 4,
-        color: "transparent",
-        highlight: "transparent",
-        label: ""
-    }
-]
-         new Chart(ctx).Doughnut(data);
-         
-               
-          /*Obj-C*/
-         var ctx = document.getElementById("objc").getContext("2d");
-      var myDoughnutChart = new Chart(ctx).Doughnut(data);
-      var data = [
-    {
-        value: 8,
-        color:"#88CFEB",
-        highlight: "#88CFEB",
-        label: "Obj-C"
-    },
-    {
-        value: 2,
-        color: "transparent",
-        highlight: "transparent",
-        label: ""
-    }
-]
-         new Chart(ctx).Doughnut(data);
-              
-         
-         /*Swift*/
-         var ctx = document.getElementById("swift").getContext("2d");
-      var myDoughnutChart = new Chart(ctx).Doughnut(data);
-      var data = [
-    {
-        value: 2,
-        color:"#88CFEB",
-        highlight: "#88CFEB",
-        label: "Swift"
-    },
-    {
-        value: 8,
-        color: "transparent",
-        highlight: "transparent",
-        label: ""
-    }
-]
-         new Chart(ctx).Doughnut(data);
-         
-          /*Unity*/
-         var ctx = document.getElementById("unity").getContext("2d");
-      var myDoughnutChart = new Chart(ctx).Doughnut(data);
-      var data = [
-    {
-        value: 6,
-        color:"#F7BE02",
-        highlight: "#F7BE02",
-        label: "Unity"
-    },
-    {
-        value: 4,
-        color: "transparent",
-        highlight: "#5AD3D1",
-        label: "Green"
-    }
-]
-         new Chart(ctx).Doughnut(data);
-         
-          /*Java*/
-         var ctx = document.getElementById("java").getContext("2d");
-      var myDoughnutChart = new Chart(ctx).Doughnut(data);
-      var data = [
-    {
-        value: 6,
-        color:"#F7BE02",
-        highlight: "#FF5A5E",
-        label: "Red"
-    },
-    {
-        value: 4,
-        color: "transparent",
-        highlight: "transparent",
-        label: ""
-    }
-]
-         new Chart(ctx).Doughnut(data);
-      </script>
-   </body>
-</html>
+
+            <h2 id="resizing" class="content-subhead">Try Resizing your Browser</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</div>
+</body></html>
